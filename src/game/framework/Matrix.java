@@ -537,7 +537,19 @@ public class Matrix implements Serializable
     @Override
     public String toString()
     {
-        throw new UnsupportedOperationException("Not yet implemented.");
+        StringBuilder sb = new StringBuilder();
+        //throw new UnsupportedOperationException("Not yet implemented.");
+        for(float i : data)
+        {
+            for(int j=0; j<ROWS; j++)
+            {
+                sb.append(i);
+                sb.append(" ");
+            }
+            sb.append("\n");
+        }
+        
+        return sb.toString();
     }
     //</editor-fold>
     

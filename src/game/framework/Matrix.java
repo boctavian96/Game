@@ -539,11 +539,11 @@ public class Matrix implements Serializable
     {
         StringBuilder sb = new StringBuilder();
         //throw new UnsupportedOperationException("Not yet implemented.");
-        for(float i : data)
+        for(int i = 0; i<COLUMNS; i++)
         {
-            for(int j=0; j<ROWS; j++)
+            for(int j = 0; j<COLUMNS; j++)
             {
-                sb.append(i);
+                sb.append(data[j]);
                 sb.append(" ");
             }
             sb.append("\n");
